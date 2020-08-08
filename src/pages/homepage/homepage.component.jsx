@@ -5,6 +5,8 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import Avatar from '@material-ui/core/Avatar';
+import Box from '@material-ui/core/Box';
+
 import './homepage.style.css';
 
 
@@ -34,13 +36,20 @@ const HomePage = () => {
                 <MuiThemeProvider theme={theme}>
                 <Typography variant='h3' color='primary'>OPEN SOURCE CLUB</Typography>
                 </MuiThemeProvider>
-                <Divider />
+              <Divider />
+              <Box
+                boxShadow={0}
+                bgcolor="#F8F8F8"
+                borderRadius={8}
+                padding={1}
+              >
                 <div className={classes.root}>
                     <a href='https://www.facebook.com/'> <Avatar alt="Facebook" src={require('../../assets/facebook.svg')}/> </a>
                     <a href="https://www.twitter.com/"><Avatar alt="Twitter" src={require('../../assets/twitter.svg')} /> </a>
                     <a href="https://www.instagram.com/"><Avatar alt="Instagram" src={require('../../assets/instagram.svg')} /> </a>
                     <a href="https://www.github.com/"><Avatar alt="Github" src={require('../../assets/github.svg')} /> </a>
                 </div>
+                </Box>
             </div>
             <Sky
             images={{

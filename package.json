@@ -2,7 +2,7 @@
   "name": "open_source",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/The-Open-Source-Club/open-source",
+  "homepage": "https://The-Open-Source-Club.github.io/open-source",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",

@@ -3,11 +3,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
+import Typography from '@material-ui/core/Typography';
 const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Open Source Club</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/"><Typography variant='h6'>OPEN SOURCE CLUB</Typography></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto"></Nav>
